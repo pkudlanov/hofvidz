@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Hall, Video
+from . import models
 
-admin.site.register(Hall)
-admin.site.register(Video)
+admin.site.register(models.Hall)
+admin.site.register(models.Video)
