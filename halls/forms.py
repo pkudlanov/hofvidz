@@ -6,3 +6,4 @@ class VideoForm(forms.ModelForm):
     class Meta:
         model = models.Video
         fields = ['title', 'url', 'youtube_id']
+        labels = {'youtube_id': 'YouTube ID'}

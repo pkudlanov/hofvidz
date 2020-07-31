@@ -20,6 +20,16 @@ def dashboard(request):
 def add_video(request, pk):
     form = forms.VideoForm()
 
+    if request.method == 'POST':
+        filled_form = forms.VideoForm(request.POST)
+        if filled_form.is_valid():
+            video = models.Video()
+            video.url = filled_form.cleaned_data['url']
+            video.title = filled_form.cleaned_data['title']
+            video.youtube_id = filled_form.cleaned_data['youtube_id']
+            video.hall = models.Hall.objects.get(pk=pk)
+            video.save()
+
     return render(request, 'halls/add_video.html', {'form': form})
 
 
