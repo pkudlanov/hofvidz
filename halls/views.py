@@ -12,6 +12,10 @@ def home(request):
     return render(request, 'halls/home.html')
 
 
+def dashboard(request):
+    return render(request, 'halls/dashboard.html')
+
+
 class SignUp(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('home')
@@ -35,3 +39,8 @@ class CreateHall(generic.CreateView):
         form.instance.user = self.request.user
         super(CreateHall, self).form_valid(form)
         return redirect('home')
+
+
+class DetailHall(generic.DetailView):
+    model = models.Hall
+    template_name = 'halls/detail_hall.html'
