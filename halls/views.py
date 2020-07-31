@@ -19,6 +19,7 @@ def dashboard(request):
 
 def add_video(request, pk):
     form = forms.VideoForm()
+    search_form = forms.SearchForm()
 
     if request.method == 'POST':
         filled_form = forms.VideoForm(request.POST)
@@ -30,7 +31,7 @@ def add_video(request, pk):
             video.hall = models.Hall.objects.get(pk=pk)
             video.save()
 
-    return render(request, 'halls/add_video.html', {'form': form})
+    return render(request, 'halls/add_video.html', {'form': form, 'search_form': search_form})
 
 
 class SignUp(generic.CreateView):

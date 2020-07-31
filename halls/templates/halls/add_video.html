@@ -8,5 +8,11 @@
             {{ form.as_p }}
             <button class="btn btn-success" type="submit">Add Video</button>
         </form>
+
+        <h2>OR</h2>
+        <form>
+            {% csrf_token %}
+            {{ search_form }}
+        </form>
     </div>
 {% endblock content %}
