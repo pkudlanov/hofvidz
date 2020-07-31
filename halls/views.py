@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 
 from . import models
+from . import forms
 
 
 def home(request):
@@ -14,6 +15,12 @@ def home(request):
 
 def dashboard(request):
     return render(request, 'halls/dashboard.html')
+
+
+def add_video(request, pk):
+    form = forms.VideoForm()
+
+    return render(request, 'halls/add_video.html', {'form': form})
 
 
 class SignUp(generic.CreateView):
