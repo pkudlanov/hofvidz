@@ -30,7 +30,8 @@ def home(request):
 
 
 def dashboard(request):
-    return render(request, 'halls/dashboard.html')
+    halls = models.Hall.objects.filter(user=request.user)
+    return render(request, 'halls/dashboard.html', {'halls': halls})
 
 
 def add_video(request, pk):
