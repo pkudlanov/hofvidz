@@ -17,8 +17,12 @@ import requests
 YOUTUBE_API_KEY = 'AIzaSyB97ldAKPu8tRKgQBHU-BO2MkT5-Nw3ylE'
 
 
-def get_youtube_api_url(video_id, api_key):
+def youtube_api_video_data_url(video_id, api_key):
     return f'https://www.googleapis.com/youtube/v3/videos?part=snippet&id={ video_id }&key={ api_key }'
+
+
+def youtube_api_search_results_url(search, api_key):
+    return f'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q={ search }&key={ api_key }'
 
 
 def home(request):
@@ -48,7 +52,7 @@ def add_video(request, pk):
             video_id = urllib.parse.parse_qs(parsed_url.query).get('v')
             if video_id:
                 video.youtube_id = video_id[0]
-                response = requests.get(get_youtube_api_url(video_id[0], YOUTUBE_API_KEY))
+                response = requests.get(youtube_api_video_data_url(video_id[0], YOUTUBE_API_KEY))
                 json = response.json()
                 title = json['items'][0]['snippet']['title']
                 video.title = title
@@ -64,8 +68,10 @@ def add_video(request, pk):
 def video_search(request):
     search_form = SearchForm(request.GET)
     if search_form.is_valid():
-        return JsonResponse({'hello': search_form.cleaned_data['search_term']})
-    return JsonResponse({'hello': 'Not working'})
+        encoded_search_term = urllib.parse.quote(search_form.cleaned_data['search_term'])
+        response = requests.get(youtube_api_search_results_url(encoded_search_term, YOUTUBE_API_KEY))
+        return JsonResponse(response.json())
+    return JsonResponse({'error': 'Not able to validate form'})
 
 
 class SignUp(generic.CreateView):
