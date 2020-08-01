@@ -37,6 +37,19 @@
             $('#id_search_term').keyup(function(){
                 clearTimeout(delayTimer);
                 $('#search_results').text('Loading...');
+                delayTimer = setTimeout(function(){
+                    let text = $('#id_search_term').val();
+                    $.ajax({
+                        url: '/video/search',
+                        data: {
+                            'search_term': text
+                        },
+                        dataType: 'json',
+                        success: function(data){
+                            $('#search_results').text(data['hello']);
+                        }
+                    });
+                }, 1000);
             });
         </script>
     </div>

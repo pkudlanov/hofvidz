@@ -1,7 +1,8 @@
+from halls.forms import SearchForm
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import generic
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from django.forms.utils import ErrorList
 
 from django.contrib.auth.forms import UserCreationForm
@@ -58,6 +59,13 @@ def add_video(request, pk):
                 errors.append('Needs to be a YouTube URL')
 
     return render(request, 'halls/add_video.html', {'form': form, 'search_form': search_form, 'hall': hall})
+
+
+def video_search(request):
+    search_form = SearchForm(request.GET)
+    if search_form.is_valid():
+        return JsonResponse({'hello': search_form.cleaned_data['search_term']})
+    return JsonResponse({'hello': 'Not working'})
 
 
 class SignUp(generic.CreateView):
