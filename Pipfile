@@ -10,6 +10,8 @@ flake8 = "*"
 django = "*"
 django-widget-tweaks = "*"
 requests = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.8"
