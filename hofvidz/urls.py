@@ -25,7 +25,7 @@ from halls import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('dasboard', views.dashboard, name='dashboard'),
+    path('dashboard', views.dashboard, name='dashboard'),
     # AUTH
     path('signup', views.SignUp.as_view(), name='signup'),
     path('login', auth_views.LoginView.as_view(), name='login'),

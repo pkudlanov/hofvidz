@@ -1,0 +1,744 @@
+[
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "halls",
+            "model": "hall"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "halls",
+            "model": "video"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "hlcsue3jx9txrux41jymdftqvneeysq9",
+        "fields": {
+            "session_data": "NTczOWI3ZGU5M2UyYjZhZTFjYjViYmQ1OGU0NTQ1MWEwN2IyNDY3OTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjZTM3OTM0NzU5ZWViZmMwOTQzZTM0YzY0M2MzYTQ5NWM1NTc2YzE2In0=",
+            "expire_date": "2020-08-16T03:56:36.125Z"
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 1,
+        "fields": {
+            "title": "Nightwish - Sleeping sun (cover by Natalia Tsarikova)",
+            "url": "https://www.youtube.com/watch?v=zfzIDdHql1s",
+            "youtube_id": "zfzIDdHql1s",
+            "hall": 1
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 2,
+        "fields": {
+            "title": "Ария - Беспечный ангел",
+            "url": "https://www.youtube.com/watch?v=ztKl8qqZr0c",
+            "youtube_id": "ztKl8qqZr0c",
+            "hall": 1
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 3,
+        "fields": {
+            "title": "Polina Gagarina - The Cuckoo (OST Battle for Sevastopol)",
+            "url": "https://www.youtube.com/watch?v=fuPX8mjeb-E",
+            "youtube_id": "fuPX8mjeb-E",
+            "hall": 1
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 4,
+        "fields": {
+            "title": "Генералы песчаных карьеров",
+            "url": "https://www.youtube.com/watch?v=r3Ee3FHPbss",
+            "youtube_id": "r3Ee3FHPbss",
+            "hall": 1
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 5,
+        "fields": {
+            "title": "Санкт Петербург с высоты птичьего полета",
+            "url": "https://www.youtube.com/watch?v=7TjhRtyuhdk",
+            "youtube_id": "7TjhRtyuhdk",
+            "hall": 2
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 6,
+        "fields": {
+            "title": "ROME from above - A 4K Drone aerial view",
+            "url": "https://www.youtube.com/watch?v=Q9qjf_qQI08",
+            "youtube_id": "Q9qjf_qQI08",
+            "hall": 2
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 7,
+        "fields": {
+            "title": "Paris - L'amour, L'amour (4K) 🇫🇷",
+            "url": "https://www.youtube.com/watch?v=E1JFr-6IARA",
+            "youtube_id": "E1JFr-6IARA",
+            "hall": 2
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 8,
+        "fields": {
+            "title": "London in 4K",
+            "url": "https://www.youtube.com/watch?v=X8zLJlU_-60",
+            "youtube_id": "X8zLJlU_-60",
+            "hall": 2
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 9,
+        "fields": {
+            "title": "Florence, Italy in 4K Ultra HD",
+            "url": "https://www.youtube.com/watch?v=gh-2onqSc40",
+            "youtube_id": "gh-2onqSc40",
+            "hall": 2
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 10,
+        "fields": {
+            "title": "Alaska to Argentina Ep1: Where the f**k has Ed March been?",
+            "url": "https://www.youtube.com/watch?v=hAjlV2DdC5o",
+            "youtube_id": "hAjlV2DdC5o",
+            "hall": 3
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 11,
+        "fields": {
+            "title": "Most Memorable Events in 60.000 kilometers of Motorcycling the World",
+            "url": "https://www.youtube.com/watch?v=r6Dpwc1y3ZU",
+            "youtube_id": "r6Dpwc1y3ZU",
+            "hall": 3
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 12,
+        "fields": {
+            "title": "Expedition South - Episode I - Colombia",
+            "url": "https://www.youtube.com/watch?v=j6NM7W7Xs_U",
+            "youtube_id": "j6NM7W7Xs_U",
+            "hall": 3
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 13,
+        "fields": {
+            "title": "KLR 650 & DRZ 400 Take on Moab's SLICKROCK TRAIL: 2015 Emig Ride Day 1! o#o",
+            "url": "https://www.youtube.com/watch?v=JPaGqg1mqTQ",
+            "youtube_id": "JPaGqg1mqTQ",
+            "hall": 3
+        }
+    },
+    {
+        "model": "halls.video",
+        "pk": 14,
+        "fields": {
+            "title": "CDS Channel Trailer",
+            "url": "https://www.youtube.com/watch?v=HyV8QLJg89M",
+            "youtube_id": "HyV8QLJg89M",
+            "hall": 3
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add hall",
+            "content_type": 7,
+            "codename": "add_hall"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change hall",
+            "content_type": 7,
+            "codename": "change_hall"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete hall",
+            "content_type": 7,
+            "codename": "delete_hall"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view hall",
+            "content_type": 7,
+            "codename": "view_hall"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add video",
+            "content_type": 8,
+            "codename": "add_video"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change video",
+            "content_type": 8,
+            "codename": "change_video"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete video",
+            "content_type": 8,
+            "codename": "delete_video"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view video",
+            "content_type": 8,
+            "codename": "view_video"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$180000$UD74dORBpBu5$ve5tUaQoH2bBxyTvNhv9VxZYNDh+6B7TF11XBmeSrjg=",
+            "last_login": "2020-08-02T03:37:08.155Z",
+            "is_superuser": false,
+            "username": "Pavlik",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-02T03:37:07.908Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$180000$VlkCyglLLvsq$kCQPjC1/f2SoszMxmfENKvhbBKvbStpsBB+ExNLSikI=",
+            "last_login": "2020-08-02T03:56:36.123Z",
+            "is_superuser": true,
+            "username": "pkudlanov",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-08-02T03:56:03.734Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "halls.hall",
+        "pk": 1,
+        "fields": {
+            "title": "Epic Music",
+            "user": 1
+        }
+    },
+    {
+        "model": "halls.hall",
+        "pk": 2,
+        "fields": {
+            "title": "Gorgeous Cites of the World",
+            "user": 1
+        }
+    },
+    {
+        "model": "halls.hall",
+        "pk": 3,
+        "fields": {
+            "title": "Adventure Motorcycling",
+            "user": 1
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2020-08-02T03:57:53.495Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Nightwish - Sleeping sun (cover by Natalia Tsarikova)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2020-08-02T03:59:56.926Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Ария - Беспечный ангел",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2020-08-02T04:00:26.760Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Polina Gagarina - The Cuckoo (OST Battle for Sevastopol)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2020-08-02T04:02:20.470Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Генералы песчаных карьеров",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2020-08-02T04:03:53.907Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Санкт Петербург с высоты птичьего полета",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2020-08-02T04:06:11.846Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "ROME from above - A 4K Drone aerial view",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2020-08-02T04:11:01.480Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Paris - L'amour, L'amour (4K) 🇫🇷",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2020-08-02T04:11:21.935Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "London in 4K",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2020-08-02T04:15:11.729Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Florence, Italy in 4K Ultra HD",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2020-08-02T04:16:56.063Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Alaska to Argentina Ep1: Where the f**k has Ed March been?",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2020-08-02T04:20:40.312Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Most Memorable Events in 60.000 kilometers of Motorcycling the World",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2020-08-02T04:25:31.682Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Expedition South - Episode I - Colombia",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2020-08-02T04:30:59.251Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "KLR 650 & DRZ 400 Take on Moab's SLICKROCK TRAIL: 2015 Emig Ride Day 1! o#o",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2020-08-02T04:33:36.071Z",
+            "user": 2,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "CDS Channel Trailer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    }
+]
