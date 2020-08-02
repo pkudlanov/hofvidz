@@ -26,7 +26,7 @@ SECRET_KEY = 'q)j0cg-hpmxq&v-z8-240248&n1)ro9mty4-uoev896)+0u5uq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hall-of-fame-vidz.herokuapp.com']
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
