@@ -26,7 +26,9 @@ def youtube_api_search_results_url(search, api_key):
 
 
 def home(request):
-    return render(request, 'halls/home.html')
+    recent_halls = models.Hall.objects.all().order_by('-id')[:3]
+    popular_halls = [models.Hall.objects.get(pk=2), models.Hall.objects.get(pk=5), models.Hall.objects.get(pk=8)]
+    return render(request, 'halls/home.html', {'recent_halls': recent_halls, 'popular_halls': popular_halls})
 
 
 def dashboard(request):
