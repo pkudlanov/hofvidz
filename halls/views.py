@@ -56,11 +56,17 @@ def add_video(request, pk):
             if video_id:
                 video.youtube_id = video_id[0]
                 response = requests.get(youtube_api_video_data_url(video_id[0], YOUTUBE_API_KEY))
-                json = response.json()
-                title = json['items'][0]['snippet']['title']
-                video.title = title
-                video.save()
-                return redirect('detail_hall', pk)
+                try:
+                    response.json()['items']
+                except KeyError:
+                    errors = form._errors.setdefault('url', ErrorList())
+                    errors.append('Hit YouTube queries limit')
+                else:
+                    json = response.json()
+                    title = json['items'][0]['snippet']['title']
+                    video.title = title
+                    video.save()
+                    return redirect('detail_hall', pk)
             else:
                 errors = form._errors.setdefault('url', ErrorList())
                 errors.append('Needs to be a YouTube URL')
