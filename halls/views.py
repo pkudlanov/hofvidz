@@ -29,7 +29,11 @@ def youtube_api_search_results_url(search, api_key):
 
 def home(request):
     recent_halls = models.Hall.objects.all().order_by('-id')[:3]
-    popular_halls = [models.Hall.objects.get(pk=1), models.Hall.objects.get(pk=2), models.Hall.objects.get(pk=3)]
+    print(models.Hall.objects.all())
+    if len(models.Hall.objects.all()) == 0:
+        popular_halls = []
+    else:
+        popular_halls = [models.Hall.objects.get(pk=1), models.Hall.objects.get(pk=2), models.Hall.objects.get(pk=3)]
     return render(request, 'halls/home.html', {'recent_halls': recent_halls, 'popular_halls': popular_halls})
 
 
