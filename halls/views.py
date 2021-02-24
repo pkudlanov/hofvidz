@@ -97,6 +97,7 @@ class DeleteVideo(LoginRequiredMixin, generic.DeleteView):
     template_name = 'halls/delete_video.html'
     success_url = reverse_lazy('dashboard')
 
+    # Make sure the loged in user owns the video
     def get_object(self):
         video = super(DeleteVideo, self).get_object()
         if not video.hall.user == self.request.user:
@@ -109,6 +110,8 @@ class SignUp(generic.CreateView):
     success_url = reverse_lazy('dashboard')
     template_name = 'registration/signup.html'
 
+    # This method is called when valid form data has been POSTed.
+    # To log a user in when the form is validated.
     def form_valid(self, form):
         view = super(SignUp, self).form_valid(form)
         username, password = form.cleaned_data.get('username'), form.cleaned_data.get('password1')
@@ -123,10 +126,14 @@ class CreateHall(LoginRequiredMixin, generic.CreateView):
     template_name = 'halls/create_hall.html'
     success_url = reverse_lazy('dashboard')
 
+    # This method is called when valid form data has been POSTed.
     def form_valid(self, form):
+        # Adding the current user into the form
+        # Required for the Hall model
         form.instance.user = self.request.user
-        super(CreateHall, self).form_valid(form)
-        return redirect('dashboard')
+
+        # Performing validation ourselves
+        return super(CreateHall, self).form_valid(form)
 
 
 class DetailHall(generic.DetailView):
